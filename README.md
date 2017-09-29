@@ -126,11 +126,46 @@ In more detail, you should do following (also criteria for grading):
 
 ## Problem 1 - Answers to questions
 
-### 1. 
+### 1. The Concept of Function
 
-### 2.
+The cocept of functions is fairly clear to me - at least the definition of functions with def functionName(parameter-s): and then indentation. Of course when the functions become more complicated the making of a function is harder as well. But I think that has more to do with the condition *within* the function and the the definition of function *itself.* 
 
-### 3. 
+But as a concept Ithink in general I do understand it - how it simplifies the writing process as you have to desing and define the function once, after which you just have to import it to your subsequent scripts. The automatization and the ability to reuse the function is a good skill to master in the world of Python. 
+
+Sometimes I have a problem internalizing/ understanding the use or the calling of a function within ones script. I have spent lot of time defining functions but at times when you need to apply that same function in your code - you have to stop and think for few seconds. Maybe I just need more practice in defining *and* importing and applying the function itself. 
+
+### 2. Benefits of Functions
+
+The main benefit would be the ability to automate the coding process and reuse already made functions that respond to specific tasks. As you do not have to write the process from beginning every time you need to implement something, but you can just import it (or write once in your code), it makes ones script more easy to read and hence understand. 
+
+ALso, I feel it allows one to gain more in depth understanding of what coding is - as you desing your own function to a certain task, and then you implement it with a function call. All steps you do repeatedly when coding that may seem initially illogical and almost 'magical'. The functions just *appear* when you import them and functions themselves just are there. But when creating your own functions and seeing they are just files, same as all the other functions you import to Python, computer and Python seem more familiar. Maybe this just applies to me as I am not very good with computers and am still slightly in the stone age when it comes to technology... With this in mind, with your own functions - you can see behind the curtains just to realise it is something you can manage.
+
+### 3. The Order of Functions
+
+The order does matter - if you use the function within the same script where you implement it - you have to define (or introduce) the function to Python before applying it in the script. For example, this does thrown an error:
+
+me = heyYou()
+def heyYou(name):
+    print('Hey! Whats your name?')
+    name = input('> ')
+    return 'Hey ' + name
+    
+But when you switch the order, the function works just fine. 
+
+The same idea applies to importing functions - the function is not in use before it is imported, which is why it is good to announce the imports at the beginning of the script as Python always moves from top to bottom. For instance this would throw an error as well:
+
+Wrong:
+-----
+celsius = f.fahrToCelsius(78) 
+print(celsius)
+import functions as f
+
+Right:
+------
+import functions as f
+celsius = f.fahrToCelsius(78) 
+print(celsius)
+
 
 
 
